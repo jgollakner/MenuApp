@@ -18,16 +18,16 @@ public class MenuItems {
         List items = new ArrayList();
 
         if (menuItems.equals("Steak")) {
-            items.add(17.50);
+            items.add("New York Strip");
 
         } else if (menuItems.equals("Chicken")) {
-            items.add(6.50);
+            items.add("Roasted Chicken Breast");
 
         } else if (menuItems.equals("Beef")) {
-            items.add(8.99);
+            items.add("Double Cheeseburger");
 
         } else {
-            items.add(7.95);
+            items.add("Pork Chops");
         }
 
         return items;
@@ -36,16 +36,16 @@ public class MenuItems {
         List items = new ArrayList();
 
         if (menuItems.equals("Alfredo")) {
-            items.add(11.25);
+            items.add("Pasta Alfredo");
 
         } else if (menuItems.equals("Spaghetti")) {
-            items.add(9.75);
+            items.add("Italian Spaghetti");
 
         } else if (menuItems.equals("MashedPotatoes")) {
-            items.add(5.99);
+            items.add("Garlic Mashed Potatoes");
 
         } else {
-            items.add(4.50);
+            items.add("Brown Rice");
         }
 
         return items;
@@ -55,16 +55,16 @@ public class MenuItems {
         List items = new ArrayList();
 
         if (menuItems.equals("Beer")) {
-            items.add(3.00);
+            items.add("Miller Lite");
 
         } else if (menuItems.equals("Wine")) {
-            items.add(9.75);
+            items.add("Cabernet");
 
         } else if (menuItems.equals("Whiskey")) {
-            items.add(5.99);
+            items.add("Old Thompson Whiskey");
 
         } else {
-            items.add(4.50);
+            items.add("Bombay Gin");
         }
 
         return items;
@@ -74,16 +74,16 @@ public class MenuItems {
         List items = new ArrayList();
 
         if (menuItems.equals("Cake")) {
-            items.add(3.25);
+            items.add("Red Velvet Cake");
 
         } else if (menuItems.equals("Pie")) {
-            items.add(4.99);
+            items.add("French Silk Pie");
 
         } else if (menuItems.equals("IceCream")) {
-            items.add(2.25);
+            items.add("Vanilla Ice Cream");
 
         } else {
-            items.add(3.25);
+            items.add("Fudge Brownie");
         }
 
         return items;

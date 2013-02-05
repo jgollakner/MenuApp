@@ -54,9 +54,9 @@ public class MenuSelectionController extends HttpServlet {
             List result4 = mi.getItems4(m4.trim());
          
             request.setAttribute("FinalOrder", result);
-            request.setAttribute("FinalOrder", result2);
-            request.setAttribute("FinalOrder", result3);
-            request.setAttribute("FinalOrder", result4);
+            request.setAttribute("FinalOrder2", result2);
+            request.setAttribute("FinalOrder3", result3);
+            request.setAttribute("FinalOrder4", result4);
             
             
             RequestDispatcher view =

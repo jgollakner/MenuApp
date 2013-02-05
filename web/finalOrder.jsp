@@ -17,11 +17,17 @@
         <h1>Here are the items within your selection!</h1><br />
         <p>
             <%
-                List recs = (List) request.getAttribute("FinalOrder");
-                Iterator it = recs.iterator();
-                while (it.hasNext()) {
-                    out.print(it.next());
-                }
+                Object oMeat = request.getAttribute("FinalOrder".toString());
+                out.println(oMeat);
+                
+                Object oPasta = request.getAttribute("FinalOrder2".toString());
+                out.println(oPasta);
+                
+                Object oAlcohol = request.getAttribute("FinalOrder3".toString());
+                out.println(oAlcohol);
+                
+                Object oDessert = request.getAttribute("FinalOrder4".toString());
+                out.println(oDessert);
             %>
         </p>
         <p><a href="select.html">Back
