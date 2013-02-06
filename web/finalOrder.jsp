@@ -17,17 +17,45 @@
         <h1>Here are the items within your selection!</h1><br />
         <p>
             <%
-                Object oMeat = request.getAttribute("FinalOrder".toString());
-                out.println(oMeat);
-                
-                Object oPasta = request.getAttribute("FinalOrder2".toString());
-                out.println(oPasta);
-                
-                Object oAlcohol = request.getAttribute("FinalOrder3".toString());
-                out.println(oAlcohol);
-                
-                Object oDessert = request.getAttribute("FinalOrder4".toString());
-                out.println(oDessert);
+                Object oMeat = request.getAttribute("FinalOrder");
+                String sMeat = "";
+                if (oMeat == null) {
+                    //sMeat = (String)oMeat;
+                    out.println("");
+                } else {
+                    sMeat = (String) oMeat;
+                    out.println(sMeat);
+                }
+                Object oPasta = request.getAttribute("FinalOrder2");
+                String sPasta = "";
+                if (oPasta == null) {
+                    //sMeat = (String)oMeat;
+                    out.println("");
+                } else {
+                    sPasta = (String) oPasta;
+                    out.println(sPasta);
+                }
+                Object oDrink = request.getAttribute("FinalOrder3");
+                String sDrink = "";
+                if (oDrink == null) {
+                    //sMeat = (String)oMeat;
+                    out.println("");
+                } else {
+                    sDrink = (String) oDrink;
+                    out.println(sDrink);
+                }
+                Object oDessert = request.getAttribute("FinalOrder4");
+                String sDessert = "";
+                if (oDessert == null) {
+                    //sMeat = (String)oMeat;
+                    out.println("");
+                } else {
+                    sDessert = (String) oDessert;
+                    out.println(sDessert);
+                }
+
+
+
             %>
         </p>
         <p><a href="select.html">Back

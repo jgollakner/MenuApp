@@ -4,90 +4,115 @@
  */
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  *
  * @author JoeGollakner
  */
 public class MenuItems {
-    
-    
-    public List getItems(String menuItems) {
-        List items = new ArrayList();
+
+    public String getItems(String menuItems) {
+       // List items = new ArrayList();
+        String theMeat;
+        double mPrice;
 
         if (menuItems.equals("Steak")) {
-            items.add("New York Strip");
+            theMeat = "New York Strip";
+            mPrice = 19.99;
 
         } else if (menuItems.equals("Chicken")) {
-            items.add("Roasted Chicken Breast");
+            theMeat = "Roasted Chicken Breast";
+            mPrice = 19.99;
 
         } else if (menuItems.equals("Beef")) {
-            items.add("Double Cheeseburger");
+            theMeat = "Double Cheeseburger";
+            mPrice = 19.99;
 
+        } else if (menuItems.equals("Pork")) {
+            theMeat = "Pork Chops";
+            mPrice = 19.99;
+            
         } else {
-            items.add("Pork Chops");
+            theMeat = "";
+            mPrice = 0;
         }
 
-        return items;
+        return theMeat;
+
+
+    
     }
-    public List getItems2(String menuItems) {
-        List items = new ArrayList();
+
+    public String getItems2(String menuItems) {
+        //List items2 = new ArrayList();
+        
+        String thePasta;
 
         if (menuItems.equals("Alfredo")) {
-            items.add("Pasta Alfredo");
+            thePasta = "Pasta Alfredo";
 
         } else if (menuItems.equals("Spaghetti")) {
-            items.add("Italian Spaghetti");
+            thePasta = "Italian Spaghetti";
 
         } else if (menuItems.equals("MashedPotatoes")) {
-            items.add("Garlic Mashed Potatoes");
+            thePasta = "Garlic Mashed Potatoes";
+
+        } else if (menuItems.equals("Rice")) {
+            thePasta = "Brown rice";
 
         } else {
-            items.add("Brown Rice");
+            
+            thePasta = "";
         }
 
-        return items;
+        return thePasta;
     }
-    
-    public List getItems3(String menuItems) {
-        List items = new ArrayList();
+
+    public String getItems3(String menuItems) {
+        //List items3 = new ArrayList();
+        
+        String theDrink;
 
         if (menuItems.equals("Beer")) {
-            items.add("Miller Lite");
+            theDrink = "Miller Lite";
 
         } else if (menuItems.equals("Wine")) {
-            items.add("Cabernet");
+            theDrink = "Cabernet";
 
         } else if (menuItems.equals("Whiskey")) {
-            items.add("Old Thompson Whiskey");
+            theDrink = "Old Thompson Whiskey";
 
-        } else {
-            items.add("Bombay Gin");
+        } else if (menuItems.equals("Gin")) {
+            theDrink = "Bombay gin";
+        
+        }else{
+            theDrink = "";
         }
 
-        return items;
+        return theDrink;
     }
-    
-    public List getItems4(String menuItems) {
-        List items = new ArrayList();
+
+    public String getItems4(String menuItems) {
+        //List items4 = new ArrayList();
+        
+        String theDessert;
 
         if (menuItems.equals("Cake")) {
-            items.add("Red Velvet Cake");
+            theDessert = "Red Velvet Cake";
 
         } else if (menuItems.equals("Pie")) {
-            items.add("French Silk Pie");
+           theDessert = "French Silk Pie";
 
         } else if (menuItems.equals("IceCream")) {
-            items.add("Vanilla Ice Cream");
+            theDessert = "Vanilla Ice Cream";
 
-        } else {
-            items.add("Fudge Brownie");
+        } else if (menuItems.equals("Brownie")) {
+            theDessert = "Fudge Brownie";
+        }else{
+            theDessert = "";
         }
 
-        return items;
+        return theDessert;
     }
-    
-    
 }

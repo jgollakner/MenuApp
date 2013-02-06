@@ -48,15 +48,22 @@ public class MenuSelectionController extends HttpServlet {
             
             MenuItems mi = new MenuItems();
             
-            List result = mi.getItems(m.trim());
-            List result2 = mi.getItems2(m2.trim());
-            List result3 = mi.getItems3(m3.trim());
-            List result4 = mi.getItems4(m4.trim());
+            String result = mi.getItems(m.trim());
+            String result2 = mi.getItems2(m2.trim());
+            String result3 = mi.getItems3(m3.trim());
+            String result4 = mi.getItems4(m4.trim());
+  
+            
+            String finalOrder = "</br>"  + result;
+            String finalOrder2 = "</br>" + result2;
+            String finalOrder3 = "</br>" + result3; 
+            String finalOrder4 = "</br>" + result4;
+            
          
-            request.setAttribute("FinalOrder", result);
-            request.setAttribute("FinalOrder2", result2);
-            request.setAttribute("FinalOrder3", result3);
-            request.setAttribute("FinalOrder4", result4);
+            request.setAttribute("FinalOrder", finalOrder);
+            request.setAttribute("FinalOrder2", finalOrder2);
+            request.setAttribute("FinalOrder3", finalOrder3);
+            request.setAttribute("FinalOrder4", finalOrder4);
             
             
             RequestDispatcher view =
