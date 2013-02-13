@@ -15,33 +15,26 @@ public class MenuItems {
     public String getItems(String menuItems) {
        // List items = new ArrayList();
         String theMeat;
-        double mPrice;
 
         if (menuItems.equals("Steak")) {
             theMeat = "New York Strip";
-            mPrice = 19.99;
 
         } else if (menuItems.equals("Chicken")) {
             theMeat = "Roasted Chicken Breast";
-            mPrice = 19.99;
 
         } else if (menuItems.equals("Beef")) {
             theMeat = "Double Cheeseburger";
-            mPrice = 19.99;
 
         } else if (menuItems.equals("Pork")) {
             theMeat = "Pork Chops";
-            mPrice = 19.99;
             
         } else {
             theMeat = "";
-            mPrice = 0;
         }
 
         return theMeat;
 
-
-    
+   
     }
 
     public String getItems2(String menuItems) {

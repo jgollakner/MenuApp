@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.MenuItems;
+import model.MenuPrices;
 
 /**
  *
@@ -46,6 +47,11 @@ public class MenuSelectionController extends HttpServlet {
             String m4 = request.getParameter("menuItem4");
             
             MenuItems mi = new MenuItems();
+            MenuPrices = mp = new MenuPrices();
+
+            String price = mp.getPrice(m.trim());
+            
+            
             
             String result = mi.getItems(m.trim());
             String result2 = mi.getItems2(m2.trim());
