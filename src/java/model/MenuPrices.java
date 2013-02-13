@@ -19,7 +19,7 @@ public class MenuPrices {
         } else if (menuPrices.equals("Chicken")) {
             mPrice = "8.99";
 
-        } else if (menuPrices.equals("Beef")) {
+        } else if (menuPrices.equals("Burger")) {
             mPrice = "7.95";
 
         } else if (menuPrices.equals("Pork")) {
@@ -68,7 +68,7 @@ public class MenuPrices {
             dPrice = "12.50";
 
         } else if (menuPrices.equals("Whiskey")) {
-            dPrice = "6.00";
+            dPrice = "6.50";
 
         } else if (menuPrices.equals("Gin")) {
             dPrice = "4.50";

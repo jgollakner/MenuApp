@@ -22,7 +22,7 @@ public class MenuItems {
         } else if (menuItems.equals("Chicken")) {
             theMeat = "Roasted Chicken Breast";
 
-        } else if (menuItems.equals("Beef")) {
+        } else if (menuItems.equals("Burger")) {
             theMeat = "Double Cheeseburger";
 
         } else if (menuItems.equals("Pork")) {

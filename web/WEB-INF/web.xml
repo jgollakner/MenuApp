@@ -14,7 +14,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>PriceGrabController</servlet-name>
-        <url-pattern>/SelectMenu.do</url-pattern>
+        <url-pattern>/SelectPrice.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

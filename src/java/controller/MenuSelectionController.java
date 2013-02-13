@@ -47,12 +47,19 @@ public class MenuSelectionController extends HttpServlet {
             String m4 = request.getParameter("menuItem4");
             
             MenuItems mi = new MenuItems();
-
+            MenuPrices mp = new MenuPrices();
             
             String result = mi.getItems(m.trim());
             String result2 = mi.getItems2(m2.trim());
             String result3 = mi.getItems3(m3.trim());
             String result4 = mi.getItems4(m4.trim());
+            
+            
+
+            double price = Double.parseDouble(mp.getPrice(m.trim()));
+            double price2 = Double.parseDouble(mp.getPrice2(m2.trim()));
+            double price3 = Double.parseDouble(mp.getPrice3(m3.trim()));
+            double price4 = Double.parseDouble(mp.getPrice4(m4.trim()));
   
             
             String finalOrder = "</br>"  + result;
@@ -60,11 +67,21 @@ public class MenuSelectionController extends HttpServlet {
             String finalOrder3 = "</br>" + result3; 
             String finalOrder4 = "</br>" + result4;
             
+            double finalPrice = price;
+            double finalPrice2 = price2;
+            double finalPrice3 = price3;
+            double finalPrice4 = price4;
+            
          
             request.setAttribute("FinalOrder", finalOrder);
             request.setAttribute("FinalOrder2", finalOrder2);
             request.setAttribute("FinalOrder3", finalOrder3);
             request.setAttribute("FinalOrder4", finalOrder4);
+            
+            request.setAttribute("FinalPrice", finalPrice);
+            request.setAttribute("FinalPrice2", finalPrice2);
+            request.setAttribute("FinalPrice3", finalPrice3);
+            request.setAttribute("FinalPrice4", finalPrice4);
             
             
             RequestDispatcher view =
