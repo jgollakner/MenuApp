@@ -4,8 +4,16 @@
         <servlet-name>MenuSelectionController</servlet-name>
         <servlet-class>controller.MenuSelectionController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PriceGrabController</servlet-name>
+        <servlet-class>controller.PriceGrabController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MenuSelectionController</servlet-name>
+        <url-pattern>/SelectMenu.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PriceGrabController</servlet-name>
         <url-pattern>/SelectMenu.do</url-pattern>
     </servlet-mapping>
     <session-config>
